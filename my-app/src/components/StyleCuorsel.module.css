@@ -24,3 +24,15 @@
 .card-body{
    height: 60%;
 }
+.Con2Button
+{
+    border: solid 1px black;
+    display: inline-block;
+    margin-left: 20px;
+    height: 30px;
+}
+.Con2Button_tag{
+    color: black;
+    text-decoration:none ;
+    font-weight: bold;
+}

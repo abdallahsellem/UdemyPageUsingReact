@@ -23,9 +23,9 @@ function App() {
           Choose from a range of courses that will appeal to...
         </p>
         <br />
-        <section >
-          <div className="Con2Button">
-            <a>Explore Python</a>
+        <section>
+          <div className={listStyles2.Con2Button}>
+            <a className={listStyles2.Con2Button_tag}>Explore Python</a>
           </div>
         </section>
         <div className="Courses_Section">
