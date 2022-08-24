@@ -1,21 +1,38 @@
-.ms-8rem {
-  margin-left: 8rem;
+.carousel_control_prev
+{
+    width: 50px !important;
+    border-radius: 100%;
+    background-color: rgb(28, 27, 27) !important;
 }
-.card-body {
-  height: 60%;
+.carousel_control_next
+{
+    width: 50px !important;
+    border-radius: 100%;
+    background-color: rgb(28, 27, 27) !important;
 }
-.Courses_Section {
-  display: flex;
-  margin: 20px;
+.slide
+{
+   width: 100%;
+   height: 300px;
+   margin-left: 0;
 }
-.Con2Button {
-  border: solid 1px black;
-  display: inline-block;
-  margin-left: 20px;
-  height: 30px;
+
+.ms-8rem
+{
+     margin-left: 8rem;
 }
-.Con2Button_tag {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
+.card-body{
+   height: 60%;
+}
+.Con2Button
+{
+    border: solid 1px black;
+    display: inline-block;
+    margin-left: 20px;
+    height: 30px;
+}
+.Con2Button_tag{
+    color: black;
+    text-decoration:none ;
+    font-weight: bold;
 }

@@ -1,602 +1,715 @@
-* {
-  margin: 0;
 
-  padding: 0;
+    *{
 
-  box-sizing: border-box;
-}
-a .nav_bar {
-  width: 100%;
+        margin: 0;
 
-  display: flex;
+        padding :0 ;
 
-  height: 90px;
+        box-sizing: border-box;
 
-  justify-content: left;
+    }
+    a
+    .nav_bar{
+        width: 100%;
 
-  align-items: center;
+        display: flex ;
 
-  align-content: center;
+        height: 90px;
 
-  background-color: rgb(250, 248, 248);
-}
-.nav_bar .BigScreen {
-  display: none;
-}
-.SchBar {
-  display: none;
-}
-.BigHeader {
-  margin-left: auto;
+        justify-content: left;
 
-  list-style-type: none;
-}
-.icon1 {
-  list-style-type: none;
-}
-.icon1 span {
-  display: inline !important;
-}
+        align-items: center;
 
-.CartIcon {
-  display: none;
-}
-.EarthIcon {
-  display: none;
-}
-.IconHeaderSm {
-  display: flex;
-}
-.IconHeaderSm li {
-  display: flex;
-}
+        align-content: center;
 
-/*      Middle Page Small screen                                 */
+        background-color:rgb(250, 248, 248) ;
+    }
+    .nav_bar .BigScreen{
+        display: none;
 
-.MiddleBage {
-  width: 100%;
+    }
+    .SchBar{
+        display: none;
 
-  height: 288px;
+    }
+    .BigHeader{
+        margin-left: auto;
 
-  background-color: rgb(249 249 249);
-}
-.Section1Mid {
-  width: 100%;
+        list-style-type: none;
+    }
+    .icon1{
+        list-style-type: none;
+    }
+    .icon1 span{
+        display: inline !important;
+    }
 
-  height: 437px;
-
-  overflow: hidden;
-}
-.panar {
-  width: 100%;
-}
-.imageText1 {
-  position: absolute;
-
-  width: 43%;
-
-  height: 11%;
-
-  max-height: 160px;
-
-  left: 33%;
-
-  top: 224px;
-
-  background-color: rgb(238 238 238);
-
-  display: inline-block;
-
-  text-align: center;
+    .CartIcon{
+        display: none;
+    }
+    .EarthIcon{
+        display: none;
+    }
+    .IconHeaderSm{
+        display: flex;
+  }
+  .IconHeaderSm li{
+      display: flex;
 }
 
-.Element_img2 {
-  text-align: center;
+    /*      Middle Page Small screen                                 */ 
 
-  justify-content: center;
 
-  align-content: center;
 
-  font-size: 2.3vw;
+    .MiddleBage{
+        width: 100%;
 
-  overflow: hidden;
+        height: 288px;
 
-  text-decoration: none;
+        background-color: rgb(249 249 249);
+    }
+    .Section1Mid
+    {
+        width: 100%;
 
-  color: black;
-}
+        height: 437px;
 
-.Element_img {
-  text-align: center;
+        overflow: hidden;
+    }
+    .panar{
+        width: 100%;
+    }
+    .imageText1{
+        position: absolute;
 
-  color: black;
+        width: 43%;
 
-  place-content: center;
+        height: 11%;
 
-  position: relative;
+        max-height: 160px;
 
-  top: 13%;
+        left: 33%;
 
-  font-size: 3vw;
+        top: 224px;
 
-  text-decoration: none;
+        background-color: rgb(238 238 238);
 
-  overflow: hidden;
-}
+        display: inline-block;
 
-.container1 {
-  background-color: rgb(250, 250, 244);
+        text-align: center;
 
-  margin: 10px;
-}
+    }
 
-.container1 li {
-  display: inline-block;
+    .Element_img2
+    {
+        text-align: center;
 
-  margin: 5px;
+        justify-content: center;
 
-  list-style-type: none;
+        align-content: center;
 
-  font-size: 20px;
-}
-.container1 li a {
-  text-decoration: none;
-  color: rgb(147, 144, 144);
-}
-.container1 a:hover {
-  color: black !important;
-}
-.paragraph1 {
-  margin: 10px;
+        font-size: 2.3vw;
 
-  font-size: 3vw;
-}
-main section h2 {
-  margin: 10px;
-}
+        overflow: hidden;
 
-.container2 {
-  margin: 0px;
+        text-decoration: none;
 
-  width: 80%;
+        color: black;
 
-  height: 60%;
+    }
 
-  border: solid 1px;
+    .Element_img{
 
-  background-color: rgb(255 255 255);
-}
-.container2 p {
-  margin-left: 20px;
+        text-align: center;
 
-  font-size: 18px;
-}
-.Con2Button {
-  width: 115px;
+        color: black;
 
-  height: 81%;
+        place-content: center;
 
-  background-color: rgb(246, 246, 238);
+        position: relative;
 
-  margin-left: 4%;
+        top: 13%;
 
-  border: solid 1px;
+        font-size: 3vw;
 
-  display: flex;
+        text-decoration: none;
 
-  justify-content: center;
+        overflow: hidden;
 
-  align-content: center;
-}
-.Con2Button a {
-  display: flex;
+    }
 
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
-.CoursesB1 {
-  margin: 10px;
 
-  overflow: hidden;
+    .container1 {
 
-  width: 100%;
-}
-.Con2Div img {
-  width: 100%;
+        background-color: rgb(250, 250, 244);
 
-  height: 100%;
-}
-.StarRating {
-  display: inline-block;
+        margin: 10px;
 
-  color: orange;
-}
-.StarRating a {
-  color: black;
-}
+    }
 
-.CardWarrper {
-  display: flex;
-  height: 20%;
-  width: 70%;
-}
-.carousel-control-prev {
-  width: 20px !important;
-  background-color: rgb(28, 27, 27) !important;
-}
-.carousel-control-next {
-  width: 20px !important;
-  background-color: rgb(28, 27, 27) !important;
-}
-.CardWarp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90%;
-}
+    .container1 li{
 
-.card {
-  margin-left: 0.7em;
-  height: 90% !important;
-  width: calc(100% / 3);
-}
-.slide {
-  width: 100%;
-  height: 300px;
-  margin-left: 0;
-}
+        display: inline-block;
 
-.ms-8rem {
-  margin-left: 8rem;
-}
-.card-body {
-  height: 60%;
-}
-.card-body h5 {
-  overflow: hidden;
-}
+        margin:5px;
 
-/**************************************************************/
+        list-style-type: none;
 
-@media screen and (min-width: 550px) {
-  .nav_bar .BigScreen {
-    display: inline-block;
+        font-size: 20px;
+    }
+    .container1 li a{
+        text-decoration: none;
+        color: rgb(147, 144, 144);
+    }
+    .container1 a:hover{
+         color: black !important;
+    }
+    .paragraph1
+    {
+        margin:10px ;
+
+        font-size: 3vw;
+
+    }
+    main section h2{
+
+        margin: 10px;
+    }
+
+    .container2{
+    
+        margin: 0px;
+
+        width: 80%;
+
+        height: 60%;
+
+        border: solid 1px;
+
+        background-color: rgb(255 255 255);
+
+    }
+    .container2 p{
+
+        margin-left: 20px;
+
+        font-size: 18px;
+
+    }
+    .Con2Button{
+
+        width: 115px;
+
+        height :81%;
+
+        background-color: rgb(246, 246, 238);
+
+        margin-left: 4%;
+
+        border :solid 1px ;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-content: center;
+        
+    }
+    .Con2Button a{
+
+        display: flex;
+
+        text-align: center; text-decoration: none; color: black ;
+    }
+    .CoursesB1{
+
+        margin: 10px;
+
+        overflow: hidden;
+
+        width: 100%;
+
+    }
+    .Con2Div img {
+
+        width: 100%;
+
+        height: 100%;
+    } 
+    .StarRating{
+
+        display: inline-block;
+
+        color: orange;
+
+    }
+    .StarRating a{
+
+        color: black;
+    }
+    
+    .CardWarrper{
+        display: flex;
+        height: 20%;
+        width: 70%;
+    }
+    .carousel-control-prev
+    {
+        width: 20px !important;
+        background-color: rgb(28, 27, 27) !important;
+    }
+    .carousel-control-next
+    {
+        width: 20px !important;
+        background-color: rgb(28, 27, 27) !important;
+    }
+    .CardWarp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90%;
+    }
+  
+    .card{
+         margin-left: .7em;
+         height: 90% !important;
+         width: calc(100%/3);
+     }
+     .slide
+     {
+        width: 100%;
+        height: 300px;
+        margin-left: 0;
+     }
+ 
+    .ms-8rem
+    {
+          margin-left: 8rem;
+    }
+    .card-body{
+        height: 60%;
+    }
+    .card-body h5{
+        overflow: hidden;
+    }
+
+    /**************************************************************/
+
+
+
+
+@media screen and (min-width:550px) {
+
+    .nav_bar .BigScreen{
+
+        display: inline-block;
+    
+    }
+    .nav_bar{
+
+        width: 100%;
+
+        display: flex ;
+
+        height: 90px;
+
+        justify-content: left;
+
+        align-items: center;
+
+        align-content: center;
+
+        background-color:rgb(250, 248, 248) ;
+
+    }
+    .icon1{
+
+        display: none !important;
+       }
+   .nav_bar > li  {    
+
+        list-style-type: none;
+
+        margin: 10px ;
+     }
+     .CartIcon{
+
+        display: inline-block;
+
+     }
+     .EarthIcon{
+
+        display: inline-block;
+
+     }
+     
+    .SmallscreenTag h1
+    {
+        visibility: visible;
+
+        display: inline;
+
+        position: relative;
+
+        top: -2px;
+
+    } 
+    .material-symbols-outlined {
+        display: flex;
+
+        justify-content: center;
+
+        align-content:center ;
+
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+    }
+    .form1
+    {
+        display: inline;
+
+        justify-content: center;
+
+        align-content:center ;
+
+        width: 100%;
+
+        height: 10px;
+
+        padding: 10px;
+
+        position: relative;
+
+        top:-17px
+    }
+    .Input_1{
+        position: relative;
+
+        top: 0px;
+
+        left: 20px;
+
+    }
+    .EarthIcon_Div{
+
+        background-color: rgb(250, 247, 241);
+
+        border: solid 1px black;
+    }
+    .search_bar{
+
+        display: flex;
+
+        flex-grow: 2;
+
+        justify-content: center;
+
+        align-content:center ;
+
+        
+    } 
+    .icon2{
+
+        display: inline-block;
+
+        width: 10%; 
+
+        padding-left: 90%;
+
+        position: relative;
+
+        top: -3px;
+    }
+     .search_bar section
+    {
+        border: solid 1px black;
+
+        border-radius: 50px;
+
+        display: inline-block;
+
+        background-color: white;
+
+        width: 60%;
+    }
+    
+    .search_bar section input{
+
+        display: inline;
+
+        width: 75%;
+
+        height: 49px;
+
+        border: none;
+    
+    } 
+
+    .search_bar input:focus{
+
+              outline: none;
+    }
+    .form3{
+
+        display: inline-block;
+    }
+    .Input_2{
+
+        margin: 10px;
+
+        width: 50px;
+
+        display: inline-block;
+
+        height: 25px;
+
+        border: 1px solid;
+
+        color: white;
+
+        text-align: center;
+
+        background-color: rgb(80, 74, 74);
+
+    }
+    .login a{
+
+        background-color: rgb(255, 255, 255);
+
+        border: 20px rgb(188, 14, 14);
+
+        color: black;
+
+        font-weight: 600;
+    }
+    .login{
+
+        border: 2px black solid; 
+
+        display: inline-block;
+    }
+    .signup{
+
+        display: inline-block;
+
+        border: 2px black solid;
+
+        background-color: black;
+        color: white !important;
+
+    }
+    .signup a{
+
+        color: white;
+
+        font-weight :600 ;
+
+        background-color: rgb(9, 3, 3);
+    
+    } 
+
+    /*      Middle Page Big screen                                 */ 
+
+
+    .MiddleBage{
+
+        width: 100%;
+
+        height: 500px;
+
+        background-color: rgb(255, 255, 255);
+    }
+
+
+    .Section1Mid
+    {
+        width: 100%;
+
+        height: 437px;
+
+        overflow: hidden;
+    }
+
+
+    .panar{
+        width: 100%;
+    }
+
+
+    .imageText1{
+
+        position: absolute;
+        width: 28%;
+        height: 100%;
+        left: 14%;
+        top: 166px;
+        background-color: rgb(238, 238, 238);
+        display: inline-block;
+        text-align: center;
+        overflow: hidden;
+    }
+
+
+    .Element_img2
+    {
+        text-align: center;
+
+        justify-content: center;
+
+        align-content: center;
+
+        font-size: 3vh;
+
+        overflow: hidden;
+
+        text-decoration: none;
+
+        color: black;
+
+
+    }
+    .Element_img{
+
+        text-align: center;
+        color: black;
+        place-content: center;
+        position: relative;
+        top: 13%;
+        font-size: 3.5vh;
+        text-decoration: none;
+        overflow: hidden;
+    }
+
+
+    .container1 {
+
+        background-color: rgb(255, 252, 252);
+
+        display: flex;
+
+    }
+
+
+    .container1 li{
+
+        margin: 22px;
+        color:rgb(147, 149, 150) ;
+        list-style-type: none;
+    }
+    .container1 a{
+        text-decoration: none;
+        color: #d1d7dc;
+    }
+
+
+    .paragraph1
+    {
+        margin:10px ;
+
+        font-size: 1.3vw;
+    }
+
+    main section h2{
+
+        margin: 10px;
+    }
+
+
+    .container2{
+       
+
+        width: 90%;
+
+       height: 700px;
+        
+        margin-left:50px ;
+
+        background-color: rgb(255, 254, 250);
+
+        border: solid 1px #d1d7dc;
+    }
+  
+   .Con2Div{
+         margin: 10px;
+
+        margin-left: 40px;
+
+        display:inline-block;
+
+        width: 19%;
+
+        height :30%;
+
+   }
+
+    .Con2Button{
+        width: 120px;
+
+        height: 89%;
+
+        background-color: rgb(255 255 255);
+
+        margin-left: 3%;
+
+        border: solid 1px;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-content: center;
+
+        
+    }
+
+
+    .Con2Button a{
+
+        display: flex;
+
+        text-align: center ;
+
+        text-decoration: none;
+
+        color: black;
+
+        font-weight: 600;
+
+    }
+    .CoursesB1{
+        
+        margin: 10px;
+
+        overflow: hidden;
+
+        width: 100%;
+
+    }
+    .Con2Div img {
+
+       width: 100%;
+
+       height: 100%;
+    }
+    .PriceText2 span{
+
+        margin: 5px;
+
+        font-size:1.3vw
+    }
+    .StarRating{
+
+        display: inline-block;
+
+        color: orange;
+
+    }
+    .StarRating a{
+
+        color: black;
+    }
+
   }
-  .nav_bar {
-    width: 100%;
-
-    display: flex;
-
-    height: 90px;
-
-    justify-content: left;
-
-    align-items: center;
-
-    align-content: center;
-
-    background-color: rgb(250, 248, 248);
-  }
-  .icon1 {
-    display: none !important;
-  }
-  .nav_bar > li {
-    list-style-type: none;
-
-    margin: 10px;
-  }
-  .CartIcon {
-    display: inline-block;
-  }
-  .EarthIcon {
-    display: inline-block;
-  }
-
-  .SmallscreenTag h1 {
-    visibility: visible;
-
-    display: inline;
-
-    position: relative;
-
-    top: -2px;
-  }
-  .material-symbols-outlined {
-    display: flex;
-
-    justify-content: center;
-
-    align-content: center;
-
-    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-  }
-  .form1 {
-    display: inline;
-
-    justify-content: center;
-
-    align-content: center;
-
-    width: 100%;
-
-    height: 10px;
-
-    padding: 10px;
-
-    position: relative;
-
-    top: -17px;
-  }
-  .Input_1 {
-    position: relative;
-
-    top: 0px;
-
-    left: 20px;
-  }
-  .EarthIcon_Div {
-    background-color: rgb(250, 247, 241);
-
-    border: solid 1px black;
-  }
-  .search_bar {
-    display: flex;
-
-    flex-grow: 2;
-
-    justify-content: center;
-
-    align-content: center;
-  }
-  .icon2 {
-    display: inline-block;
-
-    width: 10%;
-
-    padding-left: 90%;
-
-    position: relative;
-
-    top: -3px;
-  }
-  .search_bar section {
-    border: solid 1px black;
-
-    border-radius: 50px;
-
-    display: inline-block;
-
-    background-color: white;
-
-    width: 60%;
-  }
-
-  .search_bar section input {
-    display: inline;
-
-    width: 75%;
-
-    height: 49px;
-
-    border: none;
-  }
-
-  .search_bar input:focus {
-    outline: none;
-  }
-  .form3 {
-    display: inline-block;
-  }
-  .Input_2 {
-    margin: 10px;
-
-    width: 50px;
-
-    display: inline-block;
-
-    height: 25px;
-
-    border: 1px solid;
-
-    color: white;
-
-    text-align: center;
-
-    background-color: rgb(80, 74, 74);
-  }
-  .login a {
-    background-color: rgb(255, 255, 255);
-
-    border: 20px rgb(188, 14, 14);
-
-    color: black;
-
-    font-weight: 600;
-  }
-  .login {
-    border: 2px black solid;
-
-    display: inline-block;
-  }
-  .signup {
-    display: inline-block;
-
-    border: 2px black solid;
-
-    background-color: black;
-    color: white !important;
-  }
-  .signup a {
-    color: white;
-
-    font-weight: 600;
-
-    background-color: rgb(9, 3, 3);
-  }
-
-  /*      Middle Page Big screen                                 */
-
-  .MiddleBage {
-    width: 100%;
-
-    height: 500px;
-
-    background-color: rgb(255, 255, 255);
-  }
-
-  .Section1Mid {
-    width: 100%;
-
-    height: 437px;
-
-    overflow: hidden;
-  }
-
-  .panar {
-    width: 100%;
-  }
-
-  .imageText1 {
-    position: absolute;
-    width: 28%;
-    height: 100%;
-    left: 14%;
-    top: 166px;
-    background-color: rgb(238, 238, 238);
-    display: inline-block;
-    text-align: center;
-    overflow: hidden;
-  }
-
-  .Element_img2 {
-    text-align: center;
-
-    justify-content: center;
-
-    align-content: center;
-
-    font-size: 3vh;
-
-    overflow: hidden;
-
-    text-decoration: none;
-
-    color: black;
-  }
-  .Element_img {
-    text-align: center;
-    color: black;
-    place-content: center;
-    position: relative;
-    top: 13%;
-    font-size: 3.5vh;
-    text-decoration: none;
-    overflow: hidden;
-  }
-
-  .container1 {
-    background-color: rgb(255, 252, 252);
-
-    display: flex;
-  }
-
-  .container1 li {
-    margin: 22px;
-    color: rgb(147, 149, 150);
-    list-style-type: none;
-  }
-  .container1 a {
-    text-decoration: none;
-    color: #d1d7dc;
-  }
-
-  .paragraph1 {
-    margin: 10px;
-
-    font-size: 1.3vw;
-  }
-
-  main section h2 {
-    margin: 10px;
-  }
-
-  .container2 {
-    width: 90%;
-
-    height: 700px;
-
-    margin-left: 50px;
-
-    background-color: rgb(255, 254, 250);
-
-    border: solid 1px #d1d7dc;
-  }
-
-  .Con2Div {
-    margin: 10px;
-
-    margin-left: 40px;
-
-    display: inline-block;
-
-    width: 19%;
-
-    height: 30%;
-  }
-
-  .Con2Button {
-    width: 120px;
-
-    height: 89%;
-
-    background-color: rgb(255 255 255);
-
-    margin-left: 3%;
-
-    border: solid 1px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-content: center;
-  }
-
-  .Con2Button a {
-    display: flex;
-
-    text-align: center;
-
-    text-decoration: none;
-
-    color: black;
-
-    font-weight: 600;
-  }
-  .CoursesB1 {
-    margin: 10px;
-
-    overflow: hidden;
-
-    width: 100%;
-  }
-  .Con2Div img {
-    width: 100%;
-
-    height: 100%;
-  }
-  .PriceText2 span {
-    margin: 5px;
-
-    font-size: 1.3vw;
-  }
-  .StarRating {
-    display: inline-block;
-
-    color: orange;
-  }
-  .StarRating a {
-    color: black;
-  }
-}
