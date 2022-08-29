@@ -1,8 +1,7 @@
 import React from "react";
-import listStyles from "./StyleCard.module.css";
 import listStyles2 from "./StyleCuorsel.module.css";
 import Card from "./Card.js";
-const data = require("./courses.json");
+import data from "./courses.json";
 let DataArray = data.courses_python;
 let Data = Object.keys(DataArray).map(function (key) {
   return DataArray[key];
