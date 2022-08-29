@@ -1,9 +1,8 @@
 import React from "react";
 import listStyles from "./StyleCard.module.css";
 const Card = (props) => {
-  console.log(props);
   return (
-    <div className={listStyles.card}>
+    <div className={listStyles.cardDesktop}>
       <img src={props["image"]} className="card-img-top" alt="..."></img>
       <div className="card-body">
         <span

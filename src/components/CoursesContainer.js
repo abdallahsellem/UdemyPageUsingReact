@@ -1,8 +1,10 @@
 import React from "react";
 import listStyles2 from "./StyleCuorsel.module.css";
 import Card from "./Card.js";
+import listStyles from "./StyleCard.module.css";
 import data from "./courses.json";
 let DataArray = data.courses_python;
+let IsDesk;
 let Data = Object.keys(DataArray).map(function (key) {
   return DataArray[key];
 });
@@ -32,7 +34,7 @@ const CoursesContainer = (props) => {
           </a>
         </div>
       </section>
-      <div className={listStyles2.Courses_Section}>
+      <div className={listStyles.CoursesSection}>
         {Data.map((x, ind) => (
           <Card key={ind} {...x}></Card>
         ))}
