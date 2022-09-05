@@ -1,0 +1,79 @@
+.SlidingCard {
+  display: none;
+  height: 90%;
+}
+.SlidingImage {
+  height: 90px;
+  width: 100%;
+}
+.SlidingItems {
+  margin: 20px;
+  margin-bottom: 10px;
+}
+.SlidingMargin {
+  margin: 10px;
+}
+.FontBold {
+  font-weight: bold;
+  font-size: 20px;
+}
+.FontHashing {
+  color: #6a6f73;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+.CartButton {
+  border: 1px black;
+  background-color: #a435f0;
+  color: white;
+  width: 70%;
+  height: 50px;
+  margin: 20px;
+  margin-bottom: 5px;
+  margin-left: 60px;
+}
+.BuyButton {
+  border: 1px black solid;
+  background-color: #fcfcfc;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  width: 70%;
+  height: 50px;
+  margin-left: 60px;
+}
+.IconTv {
+  margin-left: 10px;
+  margin-right: 5px;
+  font-size: 15px;
+}
+.ButtonU {
+  margin-left: 2px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.ContainerD {
+  border: rgb(225, 220, 220);
+  width: 100%;
+}
+.ButtonB {
+  margin-left: 30px;
+  background-color: white;
+  height: 40px;
+  width: 80%;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 750px) {
+  .SlidingCard {
+    display: inline-block;
+    background-color: white;
+    width: 300px;
+    position: fixed;
+    right: 65px;
+    border: 1px solid #d1d7dc;
+  }
+}

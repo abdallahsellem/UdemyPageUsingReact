@@ -1,0 +1,28 @@
+.CartButton {
+  border: 1px black;
+  background-color: #a435f0;
+  display: block;
+  color: white;
+  width: 30%;
+  height: 50px;
+  margin: 20px;
+  margin-bottom: 5px;
+  margin-left: 30%;
+}
+.ButtonU {
+  margin-left: 80px;
+  margin-bottom: 10px;
+  color: white;
+  border: none;
+  background-color: #1c1d1f;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.ContainerOfButtons {
+  margin-left: 15%;
+}
+@media only screen and (min-width: 750px) {
+  .SlidingCardDiv {
+    display: none;
+  }
+}

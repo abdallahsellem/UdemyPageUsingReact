@@ -1,0 +1,43 @@
+.TopInterfaceStyle {
+  background-color: #1c1d1f;
+  display: inline-block;
+  width: 100%;
+}
+.InterfaceTaps {
+  color: blueviolet;
+}
+.InterfaceFont {
+  color: white;
+}
+.InterfaceMargin {
+  margin-left: 100px;
+}
+.InterfaceItemMargin {
+  margin: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.InterfaceItemMarginRight {
+  margin-right: 10px;
+}
+.BestSeller {
+  display: inline-block;
+  color: black;
+  background-color: gold;
+}
+.checked {
+  color: orange;
+}
+.DivOfStars {
+  margin-left: 20px;
+  display: inline-block;
+}
+.FontSize {
+  font-size: 15px;
+}
+.ItemsMarginTop {
+  margin-top: 20px;
+}
+.ItemsMarginBottom {
+  margin-top: 20px;
+}

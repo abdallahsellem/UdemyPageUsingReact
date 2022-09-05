@@ -1,0 +1,59 @@
+.ButtonsOfDropOut {
+  margin: 50px !important;
+  height: 50px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  width: 50% !important;
+  margin-left: 20% !important;
+  background: #f7f9fa !important;
+  color: black !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  text-align: left !important;
+  border-radius: 0 !important;
+  border: 1px solid #d1d7dc !important;
+}
+.DropOutCollapse {
+  margin: 50px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  width: 50% !important;
+  margin-left: 20% !important;
+}
+.HeaderDiv {
+  margin: 20px;
+  margin-left: 20%;
+}
+.ButtonsOfDropOut2 {
+  margin: 0px !important;
+  height: 50px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  width: 100% !important;
+  background: #f7f9fa !important;
+  color: black !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  text-align: left !important;
+  border-radius: 0 !important;
+  border: 1px solid #d1d7dc !important;
+}
+.ReadMoreButton {
+  margin: 50px !important;
+  height: 50px;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  width: 50% !important;
+  margin-left: 20% !important;
+  background: #f7f9fa !important;
+  color: black !important;
+  display: flex !important;
+  font-weight: bold;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  text-align: center !important;
+  border-radius: 0 !important;
+  border: 1px solid #050607 !important;
+}
