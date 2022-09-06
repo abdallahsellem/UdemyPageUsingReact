@@ -1,0 +1,22 @@
+.ReviewDiv {
+  margin-left: 15%;
+  margin-top: 50px;
+}
+
+.SearchButton {
+  height: 40px;
+  background-color: black;
+  width: 40px;
+  position: relative;
+  top: 3px;
+}
+
+.SearchInput {
+  border: solid 1px;
+  width: 80%;
+  height: 40px;
+}
+.DropdownComp {
+  background-color: white !important;
+  color: black !important;
+}

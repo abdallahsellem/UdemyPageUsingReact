@@ -1,0 +1,17 @@
+.container {
+  position: absolute;
+  top: 10%;
+  left: 23%;
+  width: 50%;
+}
+
+.text {
+  display: inline;
+  width: 100%;
+}
+
+.ReadOrHide {
+  color: rgb(72, 16, 135);
+  font-weight: bold;
+  cursor: pointer;
+}

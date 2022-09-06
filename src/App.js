@@ -2,13 +2,14 @@ import "./App.css";
 import TopInterface from "./components/TopInterface";
 import MiddlePage from "./components/MiddlePage";
 import { useEffect, useState } from "react";
+import NavBar from "./components/NavBar";
 import axios from "axios";
 function App() {
   const [Data, SetData] = useState([]);
   const [loading, setloading] = useState(false);
   const LoadingData = async () => {
     const x = await axios
-      .get("https://api.npoint.io/f9698bdf99e6b9b6b469/PythonCourses")
+      .get("https://api.npoint.io/6d18979fea0c821ddc37/PythonCourses")
       .then((data) => {
         SetData(data.data);
       });
@@ -21,6 +22,7 @@ function App() {
     <>
       {loading ? (
         <div>
+          <NavBar></NavBar>
           <TopInterface mydata={Data}></TopInterface>
           <MiddlePage mydata={Data}></MiddlePage>
         </div>

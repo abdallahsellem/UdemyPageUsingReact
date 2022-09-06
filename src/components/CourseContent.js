@@ -29,7 +29,7 @@ function CourseContent(props) {
                   <div>
                     <span
                       style={{ fontSize: "20px" }}
-                      class="material-symbols-outlined"
+                      className="material-symbols-outlined"
                     >
                       expand_more
                     </span>
@@ -108,7 +108,7 @@ function CourseContent(props) {
                             <div>
                               <span
                                 style={{ fontSize: "20px" }}
-                                class="material-symbols-outlined"
+                                className="material-symbols-outlined"
                               >
                                 expand_more
                               </span>

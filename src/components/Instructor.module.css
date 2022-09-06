@@ -1,0 +1,13 @@
+.BigDiv {
+  margin: 20px;
+  margin-left: 15%;
+  width: 30%;
+}
+.InstractorImgDiv {
+  display: flex;
+}
+.InstractorImg {
+  border-radius: 100%;
+  width: 20%;
+  height: 20%;
+}

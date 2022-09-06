@@ -1,0 +1,23 @@
+.StarRatingDiv {
+  margin-left: 15%;
+  display: flex;
+}
+.StarsColor {
+  background-color: #6a6f73 !important;
+  height: 8px;
+}
+.checked {
+  color: orange;
+  font-size: 1.3rem;
+}
+.RatingText {
+  color: rgb(173, 116, 8);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.ProgressDiv {
+  margin: 10px !important;
+  height: 8px !important;
+  width: 50% !important;
+  display: inline-block !important;
+}

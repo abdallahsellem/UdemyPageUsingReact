@@ -4,7 +4,7 @@
   width: 100%;
 }
 .InterfaceTaps {
-  color: blueviolet;
+  color: blueviolet !important;
 }
 .InterfaceFont {
   color: white;
