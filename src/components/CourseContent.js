@@ -1,13 +1,16 @@
 import React from "react";
 import styleing from "./CourseContent.module.css";
 function CourseContent(props) {
+  const ButtonDis = (e) => {
+    e.currentTarget.style.display = "none";
+  };
   return (
     <>
-      <div className={styleing.HeaderDiv}>
-        <h2>Course Content</h2>
-        <span> 15 sections • 110 lectures • 21h 5m total length </span>
-      </div>
-      <div>
+      <div className={styleing.CourseContainer}>
+        <div className={styleing.HeaderDiv}>
+          <h2>Course Content</h2>
+          <span> 15 sections • 110 lectures • 21h 5m total length </span>
+        </div>
         {props.mydata[0].CourseContent.map((x, idx) => {
           if (idx > 5) {
             return <></>;
@@ -69,7 +72,7 @@ function CourseContent(props) {
         })}
         {props.mydata[0].CourseContent.length > 5 ? (
           <div>
-            <p>
+            <p onClick={ButtonDis}>
               <a
                 className={"btn btn-primary" + " " + styleing.ReadMoreButton}
                 data-bs-toggle="collapse"
@@ -87,7 +90,7 @@ function CourseContent(props) {
               className={"collapse" + " " + styleing.DropOutCollapse}
               id={"collapseExample"}
             >
-              <div className="card card-body">
+              <div style={{ border: "none" }} className="card card-body">
                 {props.mydata[0].CourseContent.map((x, idx) => {
                   if (idx > 5) {
                     return (

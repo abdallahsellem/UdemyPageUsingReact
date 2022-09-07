@@ -1,0 +1,22 @@
+.StarsColor {
+  color: orange;
+}
+.PersonAvatar {
+  background-color: black;
+  height: 32px;
+  width: 35px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+}
+.PersonAvatarDiv {
+  height: 50px;
+  width: 49px;
+  margin: 6px;
+}
+.LikeButton {
+  border-radius: 50%;
+  margin: 3px;
+  height: 37px;
+  width: 37px;
+}

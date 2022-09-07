@@ -10,12 +10,12 @@ function BageNavObjectives(props) {
           <button className={styleing.BageNavButton}>Instructor</button>
           <button className={styleing.BageNavButton}>Reviews</button>
         </div>
-        <div>
+        <div style={{ width: "80%" }}>
           <div className={"row" + " " + styleing.LeariningObjectives}>
             <h3>What you'll learn</h3>
             {props.mydata[0].LeariningObjectives.map((x, idx) => {
               return (
-                <div className="col-6">
+                <div key={idx} className="col-md-6 col-sm-12">
                   <span className="material-symbols-outlined">done</span>
                   <span>{x}</span>
                 </div>

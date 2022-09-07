@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import styleing from "./ReviewsSection.module.css";
 import { Dropdown } from "react-bootstrap";
 import { DropdownButton } from "react-bootstrap";
-function ReviewsSection() {
+import ReviewCard from "./ReviewCard";
+function ReviewsSection(props) {
   const [TypeOfRating, SetRating] = useState("All ratings");
   const handleSelect = (e) => {
     SetRating(e);
-    console.log(e);
   };
   return (
     <div className={styleing.ReviewDiv}>
@@ -42,7 +42,12 @@ function ReviewsSection() {
           </DropdownButton>
         </div>
       </div>
-      <div></div>
+      <div>
+        <ReviewCard
+          reviewrating={TypeOfRating}
+          mydata={props.mydata[0].Reviews}
+        ></ReviewCard>
+      </div>
     </div>
   );
 }

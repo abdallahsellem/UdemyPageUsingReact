@@ -1,6 +1,6 @@
 .LeariningObjectives {
   width: 60%;
-  height: 200px;
+  height: 5%;
   border: solid #d1d7dc 1px;
   margin: auto !important;
   margin-top: 30px !important;
@@ -26,4 +26,35 @@
 .DivOfNavButtons {
   border-bottom: solid #d1d7dc 1px;
   height: 40px;
+}
+@media screen and (min-width: 750px) {
+  .LeariningObjectives {
+    width: 60%;
+    height: 300px;
+    border: solid #d1d7dc 1px;
+    margin: auto !important;
+    margin-top: 30px !important;
+    margin-left: 15% !important;
+  }
+  .BageNavButton {
+    margin: auto;
+    margin-left: 12%;
+    border: none;
+    background-color: white;
+    color: #6a6f73;
+    font-size: 17px;
+  }
+  .BageNavButton:hover {
+    margin: auto;
+    margin-left: 12%;
+    border: none;
+    background-color: white;
+    color: #0b0c0c;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .DivOfNavButtons {
+    border-bottom: solid #d1d7dc 1px;
+    height: 40px;
+  }
 }

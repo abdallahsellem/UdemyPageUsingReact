@@ -18,7 +18,7 @@ function MiddlePage(props) {
         })}
       </div>
       <StarRatinSection mydata={props.mydata}></StarRatinSection>
-      <ReviewsSection></ReviewsSection>
+      <ReviewsSection mydata={props.mydata}></ReviewsSection>
     </div>
   );
 }

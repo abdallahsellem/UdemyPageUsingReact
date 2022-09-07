@@ -1,0 +1,17 @@
+.TitleOnImge {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .TitleOnImge {
+    display: block;
+    width: 35%;
+    height: 175px;
+    position: absolute;
+    top: 8.4rem;
+    left: 7.2rem;
+    max-width: 44rem;
+    background: white;
+    padding: 2.4rem;
+  }
+}

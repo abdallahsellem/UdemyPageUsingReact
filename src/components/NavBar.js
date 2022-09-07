@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styleing from "./NavBar.module.css";
-function NavBar() {
+function NavBar(props) {
+  const changeinput = (e) => {
+    props.myfunc(e.target.value);
+  };
   return (
     <div style={{ display: "flex" }}>
       <nav className={styleing.NavBar}>
@@ -24,6 +27,7 @@ function NavBar() {
                 name="search"
                 className={styleing.InputOfSearch}
                 id="Input_ID"
+                onChange={changeinput}
               />
               <span
                 className={"material-symbols-outlined" + " " + styleing.icon2}
