@@ -1,10 +1,10 @@
 import React from "react";
 import styleing from "./SlidingCardSmallScreen.module.css";
-function SlidingCardSmallScreen() {
+function SlidingCardSmallScreen(props) {
   return (
     <div className={styleing.SlidingCardDiv}>
       <span className={styleing.SlidingMargin + " " + styleing.FontBold}>
-        E$149,99
+        {props.mydata.Price};
       </span>
       <button className={styleing.CartButton}>Add to Cart</button>
       <div className={styleing.ContainerOfButtons}>

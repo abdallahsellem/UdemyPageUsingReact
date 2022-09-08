@@ -35,11 +35,11 @@ function TopInterface(props) {
             <a className={styleing.InterfaceTaps}>Python</a>
           </div>
           <div>
-            <h1 className={styleing.InterfaceFont}>{props.mydata[0].Title}</h1>
+            <h1 className={styleing.InterfaceFont}>{props.mydata.Title}</h1>
           </div>
           <div>
             <h3 style={{ width: "50%" }} className={styleing.InterfaceFont}>
-              {props.mydata[0].Paragraph}
+              {props.mydata.Paragraph}
             </h3>
           </div>
           <div>
@@ -58,14 +58,14 @@ function TopInterface(props) {
                 styleing.InterfaceFont + " " + styleing.InterfaceItemMargin
               }
             >
-              {"(" + props.mydata[0].Rating + ")"}
+              {"(" + props.mydata.Rating + ")"}
             </span>
             <span
               className={
                 styleing.InterfaceFont + " " + styleing.InterfaceItemMargin
               }
             >
-              {props.mydata[0].Students + " Students"}
+              {props.mydata.Students + " Students"}
             </span>
           </div>
           <span
@@ -75,7 +75,7 @@ function TopInterface(props) {
           >
             Created by
             <span style={{ color: "blueviolet", textDecoration: "underline" }}>
-              {" " + props.mydata[0].Author}
+              {" " + props.mydata.Author}
             </span>
           </span>
           <div className={styleing.ItemsMarginTop}>
@@ -95,7 +95,7 @@ function TopInterface(props) {
                 styleing.InterfaceFont + " " + styleing.InterfaceItemMarginRight
               }
             >
-              {props.mydata[0].LastUpdate}
+              {props.mydata.LastUpdate}
             </span>
             <span
               className={
@@ -113,7 +113,7 @@ function TopInterface(props) {
                 styleing.InterfaceFont + " " + styleing.InterfaceItemMarginRight
               }
             >
-              {props.mydata[0].Languange}
+              {props.mydata.Languange}
             </span>
             <span
               className={
@@ -128,13 +128,13 @@ function TopInterface(props) {
             </span>
             <span className={styleing.InterfaceFont}>
               {" "}
-              {props.mydata[0].Languange} [Auto]
+              {props.mydata.Languange} [Auto]
             </span>
           </div>
         </div>
-        <SlidingCardSmallScreen></SlidingCardSmallScreen>
+        <SlidingCardSmallScreen mydata={props.mydata}></SlidingCardSmallScreen>
       </div>
-      <SlidingCard></SlidingCard>
+      <SlidingCard mydata={props.mydata}></SlidingCard>
     </>
   );
 }

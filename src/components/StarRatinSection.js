@@ -6,7 +6,7 @@ function StarRatinSection(props) {
       <div className={stylieng.StarRatingDiv}>
         <div>
           <div className={stylieng.RatingText} style={{ fontSize: "4rem" }}>
-            {props.mydata[0].Stars}
+            {props.mydata.Stars}
           </div>
           <div>
             <span className={"fa fa-star" + " " + stylieng.checked}></span>
@@ -22,7 +22,7 @@ function StarRatinSection(props) {
               <span
                 className={"progress-bar" + " " + stylieng.StarsColor}
                 role="progressbar"
-                style={{ width: props.mydata[0].Stars * 20 + "%" }}
+                style={{ width: props.mydata.Stars * 20 + "%" }}
                 aria-valuenow="50"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -35,7 +35,7 @@ function StarRatinSection(props) {
               <span className={"fa fa-star" + " " + stylieng.checked}></span>
             </span>
             <span style={{ marginLeft: "10px" }}>
-              {props.mydata[0].Stars * 20 + "%"}
+              {props.mydata.Stars * 20 + "%"}
             </span>
           </div>
           <div>
@@ -43,7 +43,7 @@ function StarRatinSection(props) {
               <div
                 className={"progress-bar" + " " + stylieng.StarsColor}
                 role="progressbar"
-                style={{ width: props.mydata[0].Stars * 15 + "%" }}
+                style={{ width: props.mydata.Stars * 15 + "%" }}
                 aria-valuenow="50"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -55,7 +55,7 @@ function StarRatinSection(props) {
               <span className={"fa fa-star" + " " + stylieng.checked}></span>
             </span>
             <span style={{ marginLeft: "10px" }}>
-              {props.mydata[0].Stars * 15 + "%"}
+              {props.mydata.Stars * 15 + "%"}
             </span>
           </div>
           <div>
@@ -63,7 +63,7 @@ function StarRatinSection(props) {
               <div
                 className={"progress-bar" + " " + stylieng.StarsColor}
                 role="progressbar"
-                style={{ width: props.mydata[0].Stars * 13 + "%" }}
+                style={{ width: props.mydata.Stars * 13 + "%" }}
                 aria-valuenow="50"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -75,7 +75,7 @@ function StarRatinSection(props) {
               <span className={"fa fa-star" + " " + stylieng.checked}></span>
             </span>
             <span style={{ marginLeft: "10px" }}>
-              {props.mydata[0].Stars * 13 + "%"}
+              {props.mydata.Stars * 13 + "%"}
             </span>
           </div>
           <div>
@@ -83,7 +83,7 @@ function StarRatinSection(props) {
               <div
                 className={"progress-bar" + " " + stylieng.StarsColor}
                 role="progressbar"
-                style={{ width: props.mydata[0].Stars * 5 + "%" }}
+                style={{ width: props.mydata.Stars * 5 + "%" }}
                 aria-valuenow="50"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -95,7 +95,7 @@ function StarRatinSection(props) {
               <span className={"fa fa-star" + " " + stylieng.checked}></span>
             </span>
             <span style={{ marginLeft: "10px" }}>
-              {props.mydata[0].Stars * 5 + "%"}
+              {props.mydata.Stars * 5 + "%"}
             </span>
           </div>
         </div>

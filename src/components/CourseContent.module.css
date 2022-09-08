@@ -22,11 +22,9 @@
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   width: 50% !important;
-  margin-left: 15% !important;
 }
 .HeaderDiv {
   margin: 20px;
-  margin-left: 15%;
 }
 .ButtonsOfDropOut2 {
   margin: 0px !important;
@@ -50,7 +48,6 @@
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   width: 50% !important;
-  margin-left: 15% !important;
   background: #f7f9fa !important;
   color: black !important;
   display: flex !important;

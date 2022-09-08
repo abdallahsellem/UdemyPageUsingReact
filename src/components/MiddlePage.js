@@ -13,7 +13,7 @@ function MiddlePage(props) {
       <Require_Desc mydata={props.mydata}></Require_Desc>
       <div>
         <h4 style={{ marginLeft: "15%" }}>Instructor</h4>
-        {props.mydata[0].Instructors.map((x, idx) => {
+        {props.mydata.Instructors.map((x, idx) => {
           return <Instructor key={idx} mydata={x}></Instructor>;
         })}
       </div>

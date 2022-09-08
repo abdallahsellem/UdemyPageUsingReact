@@ -15,7 +15,7 @@ const Card = (props) => {
           <span className="fa fa-star checked"></span>
           <span className="fa fa-star checked"></span>
           <span className="fa fa-star checked"></span>
-          <a>({props.people})</a>
+          <span>({props.people})</span>
         </section>
         <h5>{props.title}</h5>
         <h6>{props.price}</h6>

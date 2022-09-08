@@ -4,13 +4,12 @@ import Card from "./CoursesCard.js";
 import listStyles from "./StyleCard.module.css";
 import { Link } from "react-router-dom";
 const CoursesContainer = (props) => {
-  let xx = -1;
+  let found = -1;
+  let idd = 100;
   const setnum = (flagg) => {
-    xx = flagg;
-    console.log(flagg);
-    console.log(props.desired);
+    found = flagg;
     if (props.desired == "search for anything") {
-      xx = 0;
+      found = 0;
     }
   };
   return (
@@ -33,23 +32,28 @@ const CoursesContainer = (props) => {
       <br />
       <section>
         <div className={listStyles2.Con2Button}>
-          <a className={listStyles2.Con2Button_tag} href="">
-            Explore Python
-          </a>
+          <a className={listStyles2.Con2Button_tag}>Explore Python</a>
         </div>
       </section>
       <div className={listStyles.CoursesSection}>
-        {props.mydata.map((x, ind) => (
-          <>
-            {setnum(x.title.toLowerCase().indexOf(props.desired.toLowerCase()))}
-            {xx === -1 ? (
+        {props.mydata.map((coursedata, ind) => (
+          <div key={coursedata.id * 100}>
+            {setnum(
+              coursedata.title
+                .toLowerCase()
+                .indexOf(props.desired.toLowerCase())
+            )}
+            {found === -1 ? (
               <></>
             ) : (
-              <Link style={{ color: "black" }} to={`/pythoncourse/${x.id}`}>
-                <Card key={ind} {...x}></Card>
+              <Link
+                style={{ color: "black" }}
+                to={`/pythoncourse/${coursedata.id}`}
+              >
+                <Card {...coursedata}></Card>
               </Link>
             )}
-          </>
+          </div>
         ))}
       </div>
     </div>

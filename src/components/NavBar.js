@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import styleing from "./NavBar.module.css";
+import { Link, useNavigate } from "react-router-dom";
 function NavBar(props) {
+  const navigate = useNavigate();
   const changeinput = (e) => {
+    navigate("/");
     props.myfunc(e.target.value);
   };
   return (
@@ -12,7 +15,9 @@ function NavBar(props) {
             <span className="material-symbols-outlined"> menu</span>
           </li>
           <li className={styleing.BigHeader}>
-            <h1>Udemy</h1>
+            <Link style={{ color: " black", textDecoration: "none" }} to="/">
+              <h1 style={{ color: " black", textDecoration: "none" }}>Udemy</h1>
+            </Link>
           </li>
         </div>
         <li className={styleing.name2 + " " + styleing.BigScreen}>

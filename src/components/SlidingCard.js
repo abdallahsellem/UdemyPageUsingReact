@@ -1,21 +1,18 @@
 import React from "react";
 import styleing from "./SlidingCard.module.css";
-function SlidingCard() {
+function SlidingCard(props) {
   return (
     <>
       <div className={styleing.SlidingCard}>
         <div style={{ border: "solid 1px black" }}>
-          <img
-            className={styleing.SlidingImage}
-            src="https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg"
-          ></img>
+          <img className={styleing.SlidingImage} src={props.mydata.Image}></img>
         </div>
         <div>
           <span className={styleing.SlidingMargin + " " + styleing.FontBold}>
-            E$149,99
+            {props.mydata.Price};
           </span>
           <span className={styleing.SlidingMargin + " " + styleing.FontHashing}>
-            E$679,00
+            {props.mydata.Price};
           </span>
           <button className={styleing.CartButton}>Add to Cart</button>
           <button className={styleing.BuyButton}>Buy Now</button>

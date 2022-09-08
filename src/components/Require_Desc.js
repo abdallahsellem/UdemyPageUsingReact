@@ -6,13 +6,13 @@ function Require_Desc(props) {
     <>
       <div className={styleing.ReqDiv}>
         <h4>Requirements</h4>
-        {props.mydata[0].Requirements.map((x) => {
+        {props.mydata.Requirements.map((x) => {
           return <li> {x}</li>;
         })}
       </div>
       <div className={styleing.ReqDiv}>
         <h4>Description</h4>
-        <ReadMore>{props.mydata[0].Description}</ReadMore>
+        <ReadMore>{props.mydata.Description}</ReadMore>
       </div>
     </>
   );

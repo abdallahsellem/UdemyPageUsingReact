@@ -20,15 +20,16 @@ function ReviewCard(props) {
   }
   return (
     <div style={{ marginTop: "20px" }}>
-      <Card style={{ width: "40rem" }}>
+      <Card className={styleing.CardStyle}>
         <ListGroup variant="flush">
-          {props.mydata.map((data) => {
+          {props.mydata.map((data, idx) => {
             let flagg = props.reviewrating === "All ratings";
             if (flagg || getrate(props.reviewrating) == data.PersonRating) {
               componentss = [];
               for (let i = 0; i < data.NumberOfStars; i++) {
                 componentss.push(
                   <span
+                    key={idx}
                     className={"fa fa-star" + " " + styleing.StarsColor}
                   ></span>
                 );

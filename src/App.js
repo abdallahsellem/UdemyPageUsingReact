@@ -40,11 +40,12 @@ function App() {
               element={<HomeBage desired={InputCourse} mydata={HomePageData} />}
             />
 
-            {Data.map((coursesdata) => {
+            {Data.map((coursesdata, idx) => {
               return (
                 <Route
+                  key={idx}
                   path={`pythoncourse/${coursesdata.id}`}
-                  element={<CoursePage mydata={Data} />}
+                  element={<CoursePage mydata={Data[coursesdata.id - 1]} />}
                 />
               );
             })}
