@@ -4,8 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 function NavBar(props) {
   const navigate = useNavigate();
   const changeinput = (e) => {
-    navigate("/");
     props.myfunc(e.target.value);
+    navigate("/");
   };
   return (
     <div style={{ display: "flex" }}>

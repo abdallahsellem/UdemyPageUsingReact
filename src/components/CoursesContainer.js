@@ -1,17 +1,36 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import listStyles2 from "./StyleButton.module.css";
 import Card from "./CoursesCard.js";
 import listStyles from "./StyleCard.module.css";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 const CoursesContainer = (props) => {
+  const [searchParam, SetsearchParam] = useSearchParams();
   let found = -1;
-  let idd = 100;
-  const setnum = (flagg) => {
-    found = flagg;
-    if (props.desired == "search for anything") {
-      found = 0;
+  const setnum = (data) => {
+    const searchedCourse = searchParam.get("filter");
+    if (searchedCourse === null) {
+      found = 1;
+    } else if (
+      data.toLowerCase().indexOf(searchedCourse) !== -1 ||
+      searchedCourse === "search for anything"
+    ) {
+      found = 1;
+    } else {
+      found = -1;
     }
+    // if (searchedCourse === "search for anything" || searchedCourse === "") {
+    //   found = 0;
+    // }
+    // if (props.desired == "search for anything") {
+    //   found = 0;
+    // }
   };
+  useEffect(() => {
+    const searchedCourse = searchParam.get("filter");
+    if (searchedCourse !== null) {
+      SetsearchParam({ filter: searchedCourse });
+    } else SetsearchParam({ filter: props.desired });
+  }, [props.desired]);
   return (
     <div className="container2">
       <h3 style={{ marginLeft: "20px" }}>
@@ -38,11 +57,7 @@ const CoursesContainer = (props) => {
       <div className={listStyles.CoursesSection}>
         {props.mydata.map((coursedata, ind) => (
           <div key={coursedata.id * 100}>
-            {setnum(
-              coursedata.title
-                .toLowerCase()
-                .indexOf(props.desired.toLowerCase())
-            )}
+            {setnum(coursedata.title)}
             {found === -1 ? (
               <></>
             ) : (

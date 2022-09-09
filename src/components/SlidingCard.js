@@ -6,7 +6,9 @@ function SlidingCard(props) {
       <div className={styleing.SlidingCard}>
         <div style={{ border: "solid 1px black", display: "flex" }}>
           <img className={styleing.SlidingImage} src={props.mydata.Image}></img>
-          <span class={"material-symbols-outlined" + " " + styleing.IconPlay}>
+          <span
+            className={"material-symbols-outlined" + " " + styleing.IconPlay}
+          >
             play_circle
           </span>
         </div>

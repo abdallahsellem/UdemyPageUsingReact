@@ -5,8 +5,12 @@ import styleing from "./ReviewCard.module.css";
 function ReviewCard(props) {
   let componentss = [];
   const ChangeLikedState = (e) => {
-    e.currentTarget.isclicked = !e.currentTarget.isclicked;
-    if (e.currentTarget.isclicked === true) {
+    if (e.currentTarget.isclicked == "true") {
+      e.currentTarget.isclicked = "false";
+    } else {
+      e.currentTarget.isclicked = "true";
+    }
+    if (e.currentTarget.isclicked === "true") {
       e.target.style.color = "white";
       e.currentTarget.style.backgroundColor = "black";
     } else {
@@ -56,7 +60,7 @@ function ReviewCard(props) {
                           <button
                             className={styleing.LikeButton}
                             onClick={ChangeLikedState}
-                            isclicked={false}
+                            isclicked={"false"}
                           >
                             <span className="material-symbols-outlined">
                               thumb_up
