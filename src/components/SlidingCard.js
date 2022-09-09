@@ -4,8 +4,11 @@ function SlidingCard(props) {
   return (
     <>
       <div className={styleing.SlidingCard}>
-        <div style={{ border: "solid 1px black" }}>
+        <div style={{ border: "solid 1px black", display: "flex" }}>
           <img className={styleing.SlidingImage} src={props.mydata.Image}></img>
+          <span class={"material-symbols-outlined" + " " + styleing.IconPlay}>
+            play_circle
+          </span>
         </div>
         <div>
           <span className={styleing.SlidingMargin + " " + styleing.FontBold}>

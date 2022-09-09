@@ -20,7 +20,7 @@ function ReviewsSection(props) {
           <button className={styleing.SearchButton}>
             <span
               style={{ color: "white", backgroundColor: "black" }}
-              class="material-symbols-outlined"
+              className="material-symbols-outlined"
             >
               search
             </span>
@@ -28,7 +28,6 @@ function ReviewsSection(props) {
         </form>
         <div>
           <DropdownButton
-            alignRight
             title={TypeOfRating}
             id="dropdown-menu-align-right"
             onSelect={handleSelect}

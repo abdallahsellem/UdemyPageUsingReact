@@ -7,7 +7,7 @@ function Require_Desc(props) {
       <div className={styleing.ReqDiv}>
         <h4>Requirements</h4>
         {props.mydata.Requirements.map((x) => {
-          return <li> {x}</li>;
+          return <li key={x + 444}> {x}</li>;
         })}
       </div>
       <div className={styleing.ReqDiv}>

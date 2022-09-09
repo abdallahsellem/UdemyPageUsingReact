@@ -5,10 +5,23 @@ import styleing from "./ReviewCard.module.css";
 function ReviewCard(props) {
   let componentss = [];
   const ChangeLikedState = (e) => {
-    e.target.style.color = "white";
-    e.target.style.backgroundColor = "black";
-    e.currentTarget.style.backgroundColor = "black";
+    e.currentTarget.isclicked = !e.currentTarget.isclicked;
+    if (e.currentTarget.isclicked === true) {
+      e.target.style.color = "white";
+      e.currentTarget.style.backgroundColor = "black";
+    } else {
+      e.target.style.color = "black";
+      e.currentTarget.style.backgroundColor = "white";
+    }
   };
+  function generateData(x) {
+    componentss = [];
+    for (let i = 0; i < x; i++) {
+      componentss.push(
+        <span className={"fa fa-star" + " " + styleing.StarsColor}></span>
+      );
+    }
+  }
   function getrate(x) {
     if (x === "Five Star") {
       return 5;
@@ -25,17 +38,9 @@ function ReviewCard(props) {
           {props.mydata.map((data, idx) => {
             let flagg = props.reviewrating === "All ratings";
             if (flagg || getrate(props.reviewrating) == data.PersonRating) {
-              componentss = [];
-              for (let i = 0; i < data.NumberOfStars; i++) {
-                componentss.push(
-                  <span
-                    key={idx}
-                    className={"fa fa-star" + " " + styleing.StarsColor}
-                  ></span>
-                );
-              }
+              generateData(data.NumberOfStars);
               return (
-                <>
+                <div key={idx + 777}>
                   <ListGroup.Item>
                     <div style={{ display: "flex" }}>
                       <div className={styleing.PersonAvatarDiv}>
@@ -51,8 +56,9 @@ function ReviewCard(props) {
                           <button
                             className={styleing.LikeButton}
                             onClick={ChangeLikedState}
+                            isclicked={false}
                           >
-                            <span class="material-symbols-outlined">
+                            <span className="material-symbols-outlined">
                               thumb_up
                             </span>
                           </button>
@@ -60,7 +66,7 @@ function ReviewCard(props) {
                             className={styleing.LikeButton}
                             onClick={ChangeLikedState}
                           >
-                            <span class="material-symbols-outlined">
+                            <span className="material-symbols-outlined">
                               thumb_down
                             </span>
                           </button>
@@ -68,7 +74,7 @@ function ReviewCard(props) {
                       </div>
                     </div>
                   </ListGroup.Item>
-                </>
+                </div>
               );
             }
           })}

@@ -5,6 +5,7 @@
 .SlidingImage {
   height: 110px;
   width: 100%;
+  display: inline;
 }
 .SlidingItems {
   margin: 20px;
@@ -67,6 +68,13 @@
   font-weight: 700;
   margin-bottom: 20px;
 }
+.IconPlay {
+  position: absolute !important;
+  top: 4% !important;
+  left: 39% !important;
+  color: white !important;
+  font-size: 4rem !important;
+}
 @media only screen and (min-width: 750px) {
   .SlidingCard {
     display: inline-block;
@@ -75,5 +83,12 @@
     position: fixed;
     right: 65px;
     border: 1px solid #d1d7dc;
+  }
+  .IconPlay {
+    position: absolute !important;
+    top: 4% !important;
+    left: 39% !important;
+    color: white !important;
+    font-size: 4rem !important;
   }
 }
