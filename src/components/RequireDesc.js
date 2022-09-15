@@ -1,7 +1,7 @@
 import React from "react";
-import styleing from "./Require_Desc.module.css";
+import styleing from "./RequireDesc.module.css";
 import ReadMore from "./ReadMore";
-function Require_Desc(props) {
+function RequireDesc(props) {
   return (
     <>
       <div className={styleing.ReqDiv}>
@@ -18,4 +18,4 @@ function Require_Desc(props) {
   );
 }
 
-export default Require_Desc;
+export default RequireDesc;

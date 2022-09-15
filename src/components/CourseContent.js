@@ -4,6 +4,7 @@ function CourseContent(props) {
   const ButtonDis = (e) => {
     e.currentTarget.style.display = "none";
   };
+  let AdditionalCourses = [];
   return (
     <>
       <div className={styleing.CourseContainer}>
@@ -15,7 +16,66 @@ function CourseContent(props) {
           return (
             <div key={idx + 222}>
               {idx > 5 ? (
-                <></>
+                AdditionalCourses.push(
+                  <div key={idx + 500}>
+                    <span>
+                      <a
+                        className={
+                          "btn btn-primary" + " " + styleing.ButtonsOfDropOut2
+                        }
+                        data-bs-toggle="collapse"
+                        href={"#collapseExample" + idx}
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        <div>
+                          <span
+                            style={{ fontSize: "20px" }}
+                            className="material-symbols-outlined"
+                          >
+                            expand_more
+                          </span>
+                          <span
+                            style={{
+                              fontWeight: "bold",
+                              margin: "0px !important",
+                            }}
+                          >
+                            {coursedata.title}
+                          </span>
+                        </div>
+                        <span>
+                          {coursedata.ArrContent.length} lectures{" "}
+                          {28 * (idx + 1)} Minutes
+                        </span>
+                      </a>
+                    </span>
+                    <div
+                      className={"collapse" + " " + styleing.DropOutCollapse}
+                      id={"collapseExample" + idx}
+                    >
+                      <div className="card card-body">
+                        {coursedata.ArrContent.map((dat, idx) => {
+                          return (
+                            <div key={idx + 444}>
+                              <span
+                                style={{
+                                  fontSize: "19px",
+                                  marginRight: "7px",
+                                }}
+                                className="material-symbols-outlined"
+                              >
+                                play_circle
+                              </span>
+                              <span>{dat}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                )
               ) : (
                 <div>
                   <div>
@@ -97,74 +157,7 @@ function CourseContent(props) {
               id={"collapseExample"}
             >
               <div style={{ border: "none" }} className="card card-body">
-                {props.mydata.CourseContent.map((coursedata, idx) => {
-                  if (idx > 5) {
-                    return (
-                      <div key={idx + 500}>
-                        <span>
-                          <a
-                            className={
-                              "btn btn-primary" +
-                              " " +
-                              styleing.ButtonsOfDropOut2
-                            }
-                            data-bs-toggle="collapse"
-                            href={"#collapseExample" + idx}
-                            role="button"
-                            aria-expanded="false"
-                            aria-controls="collapseExample"
-                          >
-                            <div>
-                              <span
-                                style={{ fontSize: "20px" }}
-                                className="material-symbols-outlined"
-                              >
-                                expand_more
-                              </span>
-                              <span
-                                style={{
-                                  fontWeight: "bold",
-                                  margin: "0px !important",
-                                }}
-                              >
-                                {coursedata.title}
-                              </span>
-                            </div>
-                            <span>
-                              {coursedata.ArrContent.length} lectures{" "}
-                              {28 * (idx + 1)} Minutes
-                            </span>
-                          </a>
-                        </span>
-                        <div
-                          className={
-                            "collapse" + " " + styleing.DropOutCollapse
-                          }
-                          id={"collapseExample" + idx}
-                        >
-                          <div className="card card-body">
-                            {coursedata.ArrContent.map((dat, idx) => {
-                              return (
-                                <div key={idx + 444}>
-                                  <span
-                                    style={{
-                                      fontSize: "19px",
-                                      marginRight: "7px",
-                                    }}
-                                    className="material-symbols-outlined"
-                                  >
-                                    play_circle
-                                  </span>
-                                  <span>{dat}</span>
-                                </div>
-                              );
-                            })}
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  }
-                })}
+                {AdditionalCourses}
               </div>
             </div>
           </div>
