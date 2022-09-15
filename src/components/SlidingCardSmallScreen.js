@@ -4,7 +4,7 @@ function SlidingCardSmallScreen(props) {
   return (
     <div className={styleing.SlidingCardDiv}>
       <span className={styleing.SlidingMargin + " " + styleing.FontBold}>
-        {props.mydata.Price};
+        {props.CoursesDataa.Price};
       </span>
       <button className={styleing.CartButton}>Add to Cart</button>
       <div className={styleing.ContainerOfButtons}>

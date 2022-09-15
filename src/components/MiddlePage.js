@@ -8,17 +8,17 @@ import ReviewsSection from "./ReviewsSection";
 function MiddlePage(props) {
   return (
     <div>
-      <BageNavObjectives mydata={props.mydata}></BageNavObjectives>
-      <CourseContent mydata={props.mydata}></CourseContent>
-      <RequireDesc mydata={props.mydata}></RequireDesc>
+      <BageNavObjectives CoursesDataa={props.CoursesDataa}></BageNavObjectives>
+      <CourseContent CoursesDataa={props.CoursesDataa}></CourseContent>
+      <RequireDesc CoursesDataa={props.CoursesDataa}></RequireDesc>
       <div>
         <h4 style={{ marginLeft: "15%" }}>Instructor</h4>
-        {props.mydata.Instructors.map((x, idx) => {
-          return <Instructor key={idx} mydata={x}></Instructor>;
+        {props.CoursesDataa.Instructors.map((x, idx) => {
+          return <Instructor key={idx} CoursesDataa={x}></Instructor>;
         })}
       </div>
-      <StarRatinSection mydata={props.mydata}></StarRatinSection>
-      <ReviewsSection mydata={props.mydata}></ReviewsSection>
+      <StarRatinSection CoursesDataa={props.CoursesDataa}></StarRatinSection>
+      <ReviewsSection CoursesDataa={props.CoursesDataa}></ReviewsSection>
     </div>
   );
 }

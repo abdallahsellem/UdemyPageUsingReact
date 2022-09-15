@@ -4,8 +4,8 @@ import MiddlePage from "./MiddlePage";
 function CoursePage(props) {
   return (
     <>
-      <TopInterface mydata={props.mydata}></TopInterface>
-      <MiddlePage mydata={props.mydata}></MiddlePage>
+      <TopInterface CoursesDataa={props.CoursesDataa}></TopInterface>
+      <MiddlePage CoursesDataa={props.CoursesDataa}></MiddlePage>
     </>
   );
 }

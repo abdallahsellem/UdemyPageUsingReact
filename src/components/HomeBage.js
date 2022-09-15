@@ -8,7 +8,7 @@ function HomeBage(props) {
       <HeaderOfHomePage></HeaderOfHomePage>
       <CoursesContainer
         desired={props.desired}
-        mydata={props.mydata}
+        CoursesDataa={props.CoursesDataa}
       ></CoursesContainer>
     </>
   );

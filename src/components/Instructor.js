@@ -4,41 +4,41 @@ import ReadMore from "./ReadMore";
 function Instructor(props) {
   return (
     <div className={styleing.BigDiv}>
-      <h5>{props.mydata.Name}</h5>
-      <p>{props.mydata.Job}</p>
+      <h5>{props.CoursesDataa.Name}</h5>
+      <p>{props.CoursesDataa.Job}</p>
       <div className={styleing.InstractorImgDiv}>
         <img
           className={styleing.InstractorImg}
-          src={props.mydata.InstractorImage}
+          src={props.CoursesDataa.InstractorImage}
         ></img>
         <ul>
           <div style={{ display: "flex" }}>
             <span className="material-symbols-outlined">star</span>
             <li style={{ listStyleType: "none", marginLeft: "10px" }}>
-              {props.mydata.InstractorRating + " Instractor Rating"}
+              {props.CoursesDataa.InstractorRating + " Instractor Rating"}
             </li>
           </div>
           <div style={{ display: "flex" }}>
             <span className="material-symbols-outlined">workspace_premium</span>
             <li style={{ listStyleType: "none", marginLeft: "10px" }}>
-              {props.mydata.InstractorReview + " Reviews"}
+              {props.CoursesDataa.InstractorReview + " Reviews"}
             </li>
           </div>
           <div style={{ display: "flex" }}>
             <span className="material-symbols-outlined">group</span>
             <li style={{ listStyleType: "none", marginLeft: "10px" }}>
-              {props.mydata.InstractorStudents + " Students"}
+              {props.CoursesDataa.InstractorStudents + " Students"}
             </li>
           </div>
           <div style={{ display: "flex" }}>
             <span className="material-symbols-outlined">play_circle</span>
             <li style={{ listStyleType: "none", marginLeft: "10px" }}>
-              {props.mydata.InstractorCourses + " Courses"}
+              {props.CoursesDataa.InstractorCourses + " Courses"}
             </li>
           </div>
         </ul>
       </div>
-      <ReadMore>{props.mydata.InstractorCv}</ReadMore>
+      <ReadMore>{props.CoursesDataa.InstractorCv}</ReadMore>
     </div>
   );
 }

@@ -35,11 +35,13 @@ function TopInterface(props) {
             <a className={styleing.InterfaceTaps}>Python</a>
           </div>
           <div>
-            <h1 className={styleing.InterfaceFont}>{props.mydata.Title}</h1>
+            <h1 className={styleing.InterfaceFont}>
+              {props.CoursesDataa.Title}
+            </h1>
           </div>
           <div>
             <h3 style={{ width: "50%" }} className={styleing.InterfaceFont}>
-              {props.mydata.Paragraph}
+              {props.CoursesDataa.Paragraph}
             </h3>
           </div>
           <div>
@@ -58,14 +60,14 @@ function TopInterface(props) {
                 styleing.InterfaceFont + " " + styleing.InterfaceItemMargin
               }
             >
-              {"(" + props.mydata.Rating + ")"}
+              {"(" + props.CoursesDataa.Rating + ")"}
             </span>
             <span
               className={
                 styleing.InterfaceFont + " " + styleing.InterfaceItemMargin
               }
             >
-              {props.mydata.Students + " Students"}
+              {props.CoursesDataa.Students + " Students"}
             </span>
           </div>
           <span
@@ -75,7 +77,7 @@ function TopInterface(props) {
           >
             Created by
             <span style={{ color: "blueviolet", textDecoration: "underline" }}>
-              {" " + props.mydata.Author}
+              {" " + props.CoursesDataa.Author}
             </span>
           </span>
           <div className={styleing.ItemsMarginTop}>
@@ -95,7 +97,7 @@ function TopInterface(props) {
                 styleing.InterfaceFont + " " + styleing.InterfaceItemMarginRight
               }
             >
-              {props.mydata.LastUpdate}
+              {props.CoursesDataa.LastUpdate}
             </span>
             <span
               className={
@@ -113,7 +115,7 @@ function TopInterface(props) {
                 styleing.InterfaceFont + " " + styleing.InterfaceItemMarginRight
               }
             >
-              {props.mydata.Languange}
+              {props.CoursesDataa.Languange}
             </span>
             <span
               className={
@@ -128,13 +130,15 @@ function TopInterface(props) {
             </span>
             <span className={styleing.InterfaceFont}>
               {" "}
-              {props.mydata.Languange} [Auto]
+              {props.CoursesDataa.Languange} [Auto]
             </span>
           </div>
         </div>
-        <SlidingCardSmallScreen mydata={props.mydata}></SlidingCardSmallScreen>
+        <SlidingCardSmallScreen
+          CoursesDataa={props.CoursesDataa}
+        ></SlidingCardSmallScreen>
       </div>
-      <SlidingCard mydata={props.mydata}></SlidingCard>
+      <SlidingCard CoursesDataa={props.CoursesDataa}></SlidingCard>
     </>
   );
 }

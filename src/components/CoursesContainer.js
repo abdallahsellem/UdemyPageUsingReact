@@ -18,12 +18,6 @@ const CoursesContainer = (props) => {
     } else {
       found = -1;
     }
-    // if (searchedCourse === "search for anything" || searchedCourse === "") {
-    //   found = 0;
-    // }
-    // if (props.desired == "search for anything") {
-    //   found = 0;
-    // }
   };
   useEffect(() => {
     const searchedCourse = searchParam.get("filter");
@@ -55,7 +49,7 @@ const CoursesContainer = (props) => {
         </div>
       </section>
       <div className={listStyles.CoursesSection}>
-        {props.mydata.map((coursedata, ind) => (
+        {props.CoursesDataa.map((coursedata, ind) => (
           <div key={coursedata.id * 100}>
             {setnum(coursedata.title)}
             {found === -1 ? (

@@ -5,19 +5,23 @@ function SlidingCard(props) {
     <>
       <div className={styleing.SlidingCard}>
         <div style={{ border: "solid 1px black", display: "flex" }}>
-          <img className={styleing.SlidingImage} src={props.mydata.Image}></img>
+          <img
+            className={styleing.SlidingImage}
+            src={props.CoursesDataa.Image}
+          ></img>
           <span
             className={"material-symbols-outlined" + " " + styleing.IconPlay}
           >
             play_circle
           </span>
         </div>
+        CoursesDataa
         <div>
           <span className={styleing.SlidingMargin + " " + styleing.FontBold}>
-            {props.mydata.Price};
+            {props.CoursesDataa.Price};
           </span>
           <span className={styleing.SlidingMargin + " " + styleing.FontHashing}>
-            {props.mydata.Price};
+            {props.CoursesDataa.Price};
           </span>
           <button className={styleing.CartButton}>Add to Cart</button>
           <button className={styleing.BuyButton}>Buy Now</button>

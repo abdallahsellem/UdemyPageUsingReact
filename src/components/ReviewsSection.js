@@ -44,7 +44,7 @@ function ReviewsSection(props) {
       <div>
         <ReviewCard
           reviewrating={TypeOfRating}
-          mydata={props.mydata.Reviews}
+          CoursesDataa={props.CoursesDataa.Reviews}
         ></ReviewCard>
       </div>
     </div>

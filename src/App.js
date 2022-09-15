@@ -33,11 +33,13 @@ function App() {
     <>
       {loading ? (
         <div>
-          <NavBar myfunc={TakeInput}></NavBar>
+          <NavBar PassContent={TakeInput}></NavBar>
           <Routes>
             <Route
               path="/"
-              element={<HomeBage desired={InputCourse} mydata={HomePageData} />}
+              element={
+                <HomeBage desired={InputCourse} CoursesDataa={HomePageData} />
+              }
             />
 
             {Data.map((coursesdata, idx) => {
@@ -45,7 +47,9 @@ function App() {
                 <Route
                   key={idx}
                   path={`pythoncourse/${coursesdata.id}`}
-                  element={<CoursePage mydata={Data[coursesdata.id - 1]} />}
+                  element={
+                    <CoursePage CoursesDataa={Data[coursesdata.id - 1]} />
+                  }
                 />
               );
             })}

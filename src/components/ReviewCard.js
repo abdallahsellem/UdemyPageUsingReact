@@ -39,7 +39,7 @@ function ReviewCard(props) {
     <div style={{ marginTop: "20px" }}>
       <Card className={styleing.CardStyle}>
         <ListGroup variant="flush">
-          {props.mydata.map((data, idx) => {
+          {props.CoursesDataa.map((data, idx) => {
             let flagg = props.reviewrating === "All ratings";
             if (flagg || getrate(props.reviewrating) == data.PersonRating) {
               generateData(data.NumberOfStars);
