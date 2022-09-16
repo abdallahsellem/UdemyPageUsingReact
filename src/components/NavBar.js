@@ -16,7 +16,7 @@ function NavBar(props) {
           </li>
           <li className={styleing.BigHeader}>
             <Link style={{ color: " black", textDecoration: "none" }} to="/">
-              <h1 style={{ color: " black", textDecoration: "none" }}>Udemy</h1>
+              <h1>Udemy</h1>
             </Link>
           </li>
         </div>
