@@ -1,10 +1,10 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Public/NavBar";
 import axios from "axios";
-import HomeBage from "./components/HomeBage";
+import HomeBage from "./components/FirstPage/HomeBage";
 import { Routes, Route } from "react-router-dom";
-import CoursePage from "./components/CoursePage";
+import CoursePage from "./components/SecondPage/CoursePage";
 function App() {
   const [Data, SetData] = useState([]);
   const [HomePageData, SetHomeData] = useState([]);

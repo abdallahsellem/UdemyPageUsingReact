@@ -1,5 +1,5 @@
 import React from "react";
-import styleing from "./MiddlePage.module.css";
+import styleing from "../SecondPage/MiddlePage.module.css";
 function BageNavObjectives(props) {
   return (
     <div>

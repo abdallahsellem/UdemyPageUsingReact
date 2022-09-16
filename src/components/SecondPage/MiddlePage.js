@@ -1,5 +1,5 @@
 import React from "react";
-import BageNavObjectives from "./BageNavObjectives";
+import BageNavObjectives from "../Public/BageNavObjectives";
 import CourseContent from "./CourseContent";
 import RequireDesc from "./RequireDesc";
 import Instructor from "./Instructor";
